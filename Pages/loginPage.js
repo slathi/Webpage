@@ -1,58 +1,58 @@
-var locator = require('../locators.js');
+var locators = require("../locators.js");
 
 this.verifyForInvalidEmail = function(){
 
 	//Enters blank E-mail id
-	locator.userName.sendKeys("123");
+	locators.userName.sendKeys("123");
 
 	//Password is already entered
 
 	//click on sign-in button
-	locator.signInButton.click();
+	locators.signInButton.click();
 
 	//Verifies that user is prompted to enter Valid E-mail
-	expect(locator.errorMessage).not.toEqual('welcome');
+	expect(locators.errorMessage).not.toEqual('welcome');
 
 };
 
 this.verfiyForEmptyPassword = function(){
 	
 	//Clears the password field
-	locator.password.clear();
+	locators.password.clear();
 	
 	//Click on sign-in button
-	locator.signInButton.click();
+	locators.signInButton.click();
 	
 	//Verifies user is not logged in
-	expect(locator.errorMessage).not.toEqual('welcome');
+	expect(locators.errorMessage).not.toEqual('welcome');
 	
 };
 
 this.verifyForEmptyEmail = function(){
 	
 	//clears the email-id field
-	locator.userName.clear();
+	locators.userName.clear();
 	
 	//Click on sign-in button
-	locator.signInButton.click();
+	locators.signInButton.click();
 	
 	//Verifies user is not logged in
-	expect(locator.errorMessage).not.toEqual('welcome');
+	expect(locators.errorMessage).not.toEqual('welcome');
 	
 };
 
 this.verifyForBothFieldsEmpty = function(){
 	//clears the email-id field
-	locator.userName.clear();
+	locators.userName.clear();
 	
 	//Clears the password field
-	locator.password.clear();
+	locators.password.clear();
 	
 	//Click on sign-in button
-	locator.signInButton.click();
+	locators.signInButton.click();
 	
 	//Verifies user is not logged in
-	expect(locator.errorMessage).not.toEqual('welcome');
+	expect(locators.errorMessage).not.toEqual('welcome');
 };
 
 this.verifyForValidCredentials = function(){
@@ -60,7 +60,7 @@ this.verifyForValidCredentials = function(){
 	//E-mail id and password are already entered
 	
 	//Click on sign-in button
-	locator.signInButton.click();
+	locators.signInButton.click();
 	
-	expect(locator.dashboard.getText()).toEqual("Dashboard");
+	expect(locators.dashboard.getText()).toEqual("Dashboard");
 };

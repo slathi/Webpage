@@ -1,5 +1,5 @@
-var locators = require("../locators.js");
 var loginpage = require("../Pages/loginPage.js");
+var locators = require("../locators.js");
 
 this.forMandatoryFields = function(){
 

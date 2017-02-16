@@ -1,5 +1,6 @@
-var locator = require('../locators.js');
+var locators = require("../locators.js");
 var loginpage = require("../Pages/loginPage.js");
+var headerElements = require("../Pages/headerPage.js");
 
 describe("To test the test-cases for log-in page",function(){
 

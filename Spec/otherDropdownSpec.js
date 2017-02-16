@@ -1,6 +1,7 @@
 var locators = require("../locators.js");
 var loginpage = require("../Pages/loginPage.js");
 var others = require("../Pages/otherDropdownPage.js");
+var headerElements = require("../Pages/headerPage.js");
 
 describe("To check the add customer tab",function(){
 

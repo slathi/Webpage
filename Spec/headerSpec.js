@@ -1,6 +1,6 @@
 var locators = require("../locators.js");
-var headerElements = require("../Pages/headerPage.js");
 var loginpage = require("../Pages/loginPage.js");
+var headerElements = require("../Pages/headerPage.js");
 
 describe("To check the header elements of the webpage",function(){
 	
